@@ -1,5 +1,6 @@
 package demo.martin.config;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class DemoConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -7,7 +8,7 @@ public class DemoConfig extends AbstractAnnotationConfigDispatcherServletInitial
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class<?>[] { RootConfig.class };
+		return new Class<?>[] { RootConfig.class, WebSecurityConfigure.class };
 	}
 
 	@Override
