@@ -1,8 +1,10 @@
 package demo.martin.config;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RootConfig {
-
+@ComponentScan({ "demo.martin.repository" })
+public class RootConfig {	
+	
 }
